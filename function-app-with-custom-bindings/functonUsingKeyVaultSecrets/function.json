@@ -1,0 +1,22 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "keyvaultbinding",
+      "direction": "in",
+      "secretUrl": "https://mpeckkeyvault.vault.azure.net/secrets/secret1",
+      "name": "thesecret"
+    }
+  ]
+}
